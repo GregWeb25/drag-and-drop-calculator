@@ -1,0 +1,25 @@
+.part_equality{
+    position: absolute;
+    width: 240px;
+    height: 72px;
+    left: 76px;
+    top: 482px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+.equality_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 64px;
+    background: #5D5FEF;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+}

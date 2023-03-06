@@ -1,0 +1,60 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px;
+
+    position: absolute;
+    width: 243px;
+    height: 38px;
+    left: 372px;
+    top: 38px;
+
+    background: #F3F4F6;
+    border-radius: 6px;
+}
+
+.bar_btn_text{
+    color: #4D5562;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.bar_icon{
+    color: #4D5562;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.bar_btn__active .bar_icon{
+    color: #5D5FEF;
+}
+
+.bar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 108px;
+    height: 36px;
+    border-radius: 5px;
+
+}
+
+.bar_btn__active{
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    width: 133px;
+    height: 36px;
+
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 5px;
+
+}

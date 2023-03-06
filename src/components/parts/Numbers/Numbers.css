@@ -1,0 +1,48 @@
+.part_numbers{
+    position: absolute;
+    width: 240px;
+    height: 224px;
+    left: 76px;
+    top: 246px;
+
+    background: #FFFFFF;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.number_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    width: 72px;
+    height: 48px;
+    font-weight: 500;
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+}
+
+.number_button_nul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    width: 152px;
+    height: 48px;
+    font-weight: bold;
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+    grid-row-start: 4;
+    grid-column-start: 1;
+
+    grid-row-end: 4;
+    grid-column-end: 3;
+}

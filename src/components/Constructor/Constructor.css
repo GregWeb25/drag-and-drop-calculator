@@ -1,0 +1,35 @@
+.constructor{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 243px;
+    height: 480px;
+    left: 372px;
+    top: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 2px dashed #C4C4C4;
+    border-radius: 6px;
+}
+
+.constructor h3{
+    color: #5D5FEF;
+}
+
+.constructor span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #6B7280;
+}
+
+.constructor_icon{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 6px;
+}
