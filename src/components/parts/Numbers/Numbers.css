@@ -1,17 +1,10 @@
 .part_numbers{
-    position: absolute;
     width: 240px;
     height: 224px;
-    left: 76px;
-    top: 246px;
-
-    background: #FFFFFF;
     display: grid;
     gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 }
 
 .number_button{

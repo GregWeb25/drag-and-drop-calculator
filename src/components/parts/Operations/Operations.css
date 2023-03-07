@@ -1,15 +1,9 @@
 .part_operations{
-    position: absolute;
     width: 240px;
     height: 56px;
-    left: 76px;
-    top: 178px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 }
 
 .operation_button{

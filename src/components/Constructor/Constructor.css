@@ -1,4 +1,4 @@
-.constructor{
+.constructor__empty{
     box-sizing: border-box;
 
     position: absolute;
@@ -14,12 +14,25 @@
     border: 2px dashed #C4C4C4;
     border-radius: 6px;
 }
+.constructor{
+    box-sizing: border-box;
+    position: absolute;
+    width: 243px;
+    height: 480px;
+    left: 372px;
+    top: 106px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
 
-.constructor h3{
+.constructor__empty h3{
     color: #5D5FEF;
 }
 
-.constructor span{
+.constructor__empty span{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;

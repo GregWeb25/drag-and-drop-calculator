@@ -1,15 +1,9 @@
 .part_display_container{
-    position: absolute;
     width: 240px;
     height: 60px;
-    left: 76px;
-    top: 106px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 }
 
 .display{
