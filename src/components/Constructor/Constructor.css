@@ -46,3 +46,29 @@
     color: black;
     margin-bottom: 6px;
 }
+
+.drop_line{
+    position: relative;
+    top: -4px;
+    width: 243px;
+    height: 0;
+    outline: 1px solid #5D5FEF;
+}
+.drop_line::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    content: "";
+    font-size: 0;
+    border: 2px solid #5D5FEF;
+    border-radius: 50%;
+}
+.drop_line::before{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    content: "";
+    font-size: 0;
+    border: 2px solid #5D5FEF;
+    border-radius: 50%;
+}

@@ -3,18 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="fab86d32-520e-487c-a3ec-3fc847d6f695" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bar/Bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bar/Bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bar/Bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bar/Bar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Constructor/Constructor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Constructor/Constructor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Constructor/Constructor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Constructor/Constructor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/parts/Display/Display.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Display/Display.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/Display/Display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Display/Display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/DraggableComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/DraggableComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/parts/Equality/Equality.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Equality/Equality.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/parts/Equality/Equality.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Equality/Equality.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/parts/Numbers/Numbers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Numbers/Numbers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/parts/Operations/Operations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Operations/Operations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/Numbers/Numbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Numbers/Numbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/Operations/Operations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/Operations/Operations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/constructorReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/constructorReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -58,11 +61,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\web\testing_task\src\components\ui" />
       <recent name="E:\web\testing_task\src\store\reducers" />
       <recent name="E:\web\testing_task\src\components\parts\Display" />
       <recent name="E:\web\testing_task\src\components\parts\Equality" />
       <recent name="E:\web\testing_task\src\components\parts\Numbers" />
-      <recent name="E:\web\testing_task\src\components\parts\Operations" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -91,7 +94,9 @@
       <workItem from="1678109399463" duration="8879000" />
       <workItem from="1678124070914" duration="4808000" />
       <workItem from="1678173201583" duration="6682000" />
-      <workItem from="1678186995924" duration="6743000" />
+      <workItem from="1678186995924" duration="7337000" />
+      <workItem from="1678209217081" duration="10623000" />
+      <workItem from="1678259279560" duration="8737000" />
     </task>
     <servers />
   </component>

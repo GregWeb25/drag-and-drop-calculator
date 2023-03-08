@@ -3,43 +3,29 @@ import Display from "../../components/parts/Display/Display";
 import Operations from "../../components/parts/Operations/Operations";
 import Numbers from "../../components/parts/Numbers/Numbers";
 import Equality from "../../components/parts/Equality/Equality";
+import {IAddConstructorPartBeforePayload, IPart} from "../../models/storeModels";
+import {IConstructorState} from "../../models/storeModels";
 
-
-export interface IPart {
-    name: string,
-    Component: () => JSX.Element,
-    isActive: boolean,
-    isDraggable: boolean,
-}
-
-export interface IConstructorState {
-    parts: IPart[],
-    constructorParts: IPart[],
-}
 
 const initialParts: IPart[] = [
     {
         name: 'display',
         Component: Display,
-        isActive: false,
         isDraggable: true,
     },
     {
         name: 'operations',
         Component: Operations,
-        isActive: false,
         isDraggable: true,
     },
     {
         name: 'numbers',
         Component: Numbers,
-        isActive: false,
         isDraggable: true,
     },
     {
         name: 'equality',
         Component: Equality,
-        isActive: false,
         isDraggable: true,
     },
 ]
@@ -53,19 +39,27 @@ export const constructorSlice = createSlice({
     name: 'constructor',
     initialState,
     reducers: {
-        addConstructorPart(state, action: PayloadAction<IPart>){
+        addConstructorPart(state, action: PayloadAction<string>){
             state.parts.forEach(e => {
-                if(e.name === action.payload.name){
-                    action.payload.Component = e.Component;
+                if(e.name === action.payload){
+                    state.constructorParts.push(e)
                     e.isDraggable = false;
                     return e;
                 } else  return e;
             });
-            state.constructorParts.unshift(action.payload)
+        },
+        addConstructorPartBefore(state, action: PayloadAction<IAddConstructorPartBeforePayload>){
+            state.parts.forEach(e => {
+                if(e.name === action.payload.name){
+                    state.constructorParts.splice(action.payload.position, 0, e);
+                    e.isDraggable = false;
+                    return e;
+                } else  return e;
+            });
         },
         removeConstructorPart(state, action: PayloadAction<string>){
             state.constructorParts = state.constructorParts.filter(e => e.name !== action.payload);
-            state.parts.forEach(e => {
+            state.parts.filter(e => {
                 if(e.name === action.payload){
                     e.isDraggable = true;
                     return e;
@@ -75,5 +69,5 @@ export const constructorSlice = createSlice({
     },
 });
 
-export const {addConstructorPart, removeConstructorPart} = constructorSlice.actions;
+export const {addConstructorPart, removeConstructorPart, addConstructorPartBefore} = constructorSlice.actions;
 export default constructorSlice.reducer;

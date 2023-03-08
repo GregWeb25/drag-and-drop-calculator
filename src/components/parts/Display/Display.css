@@ -10,25 +10,26 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
     padding: 4px 8px;
     gap: 10px;
     width: 232px;
     height: 52px;
     background: #F3F4F6;
     border-radius: 6px;
+    position: relative;
+    align-items: end;
 }
 
 .display_content{
-    width: 26px;
+    position: absolute;
+    right: 8px;
+    top: 2px;
     height: 44px;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 44px;
     font-family: sans-serif;
-    display: flex;
-    align-items: flex-end;
     text-align: right;
     color: #111827;
 

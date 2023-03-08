@@ -9,6 +9,7 @@
     background: #5D5FEF;
     border-radius: 6px;
     color: white;
-    font-weight: bold;
     margin: 4px;
+    border: none;
+    outline: none;
 }
