@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/drag-and-drop-calculator/static/css/main.1152c980.css",
+    "main.js": "/drag-and-drop-calculator/static/js/main.bb28f960.js",
+    "static/media/Inter-Regular.otf": "/drag-and-drop-calculator/static/media/Inter-Regular.a416f4674fad5f019461.otf",
+    "index.html": "/drag-and-drop-calculator/index.html",
+    "main.1152c980.css.map": "/drag-and-drop-calculator/static/css/main.1152c980.css.map",
+    "main.bb28f960.js.map": "/drag-and-drop-calculator/static/js/main.bb28f960.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1152c980.css",
+    "static/js/main.bb28f960.js"
+  ]
+}
