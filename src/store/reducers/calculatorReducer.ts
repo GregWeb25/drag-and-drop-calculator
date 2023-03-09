@@ -24,14 +24,16 @@ export const calculatorSlice = createSlice({
         calculateExpression(state){
             try{
                 let expression = String(state.displayExpression);
-                expression = expression.replace("x",'*');
-                expression = expression.replace(",",'.');
-                expression = String(eval(expression));
-                expression = expression.replace(".",',');
-                if(String(expression).length > 8){
-                    expression = expression.substring(0,8);
+                if(expression.length > 0){
+                    expression = expression.replace("x",'*');
+                    expression = expression.replace(",",'.');
+                    expression = String(eval(expression));
+                    expression = expression.replace(".",',');
+                    if(String(expression).length > 8){
+                        expression = expression.substring(0,8);
+                    }
+                    state.displayExpression = expression;
                 }
-                state.displayExpression = expression;
             } catch (e) {
                 state.displayExpression = "Err";
             }

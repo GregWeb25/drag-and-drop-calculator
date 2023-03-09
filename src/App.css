@@ -40,6 +40,31 @@ body{
   background: #FFFFFF;
 }
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 700px) {
+  body{
+    background-color: #FFFFFF;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .app {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 
 
 

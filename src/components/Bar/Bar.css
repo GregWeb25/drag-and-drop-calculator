@@ -60,3 +60,20 @@
     border-radius: 5px;
 
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 700px) {
+    .bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1px;
+        position: static;
+        width: 243px;
+        height: 38px;
+
+        background: #F3F4F6;
+        border-radius: 6px;
+    }
+}

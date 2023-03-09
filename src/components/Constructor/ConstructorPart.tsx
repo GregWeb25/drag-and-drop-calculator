@@ -3,10 +3,10 @@ import {
     addConstructorPartBefore,
     removeConstructorPart
 } from "../../store/reducers/constructorReducer";
-import {IPart} from "../../models/storeModels";
 import {useAppDispatch, useAppSelector} from "../../store/storeHooks";
+import {IConstructorPartProps} from "../../models/propsModels";
 
-const ConstructorPart = ({part, index}:{part: IPart, index: number}) => {
+const ConstructorPart = ({part, index}:IConstructorPartProps) => {
     const isCalculatorActive = useAppSelector((state) => state.calculator.isActive);
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const dispatch = useAppDispatch();
@@ -18,7 +18,7 @@ const ConstructorPart = ({part, index}:{part: IPart, index: number}) => {
     }
 
     function dragExitHandler() {
-            setIsHovered(false);
+        setIsHovered(false);
 
     }
 
@@ -49,4 +49,4 @@ const ConstructorPart = ({part, index}:{part: IPart, index: number}) => {
     );
 };
 
-export default ConstructorPart;
+export default React.memo(ConstructorPart);

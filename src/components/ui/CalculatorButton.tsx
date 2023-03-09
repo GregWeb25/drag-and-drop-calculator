@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css';
+import {ICalculatorButtonProps} from "../../models/propsModels";
 
-const CalculatorButton = ({onClick, value, className, isActive}:{onClick: (e: React.MouseEvent<HTMLButtonElement>, value: string) => void, value: string, className: string, isActive: boolean}) => {
+const CalculatorButton = ({onClick, value, className, isActive}:ICalculatorButtonProps) => {
     return (
         <button
             onClick={isActive ? (e)=>onClick(e, value) : ()=>{}}
@@ -13,4 +14,4 @@ const CalculatorButton = ({onClick, value, className, isActive}:{onClick: (e: Re
     );
 };
 
-export default CalculatorButton;
+export default React.memo(CalculatorButton);

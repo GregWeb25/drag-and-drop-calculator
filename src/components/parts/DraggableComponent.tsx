@@ -25,4 +25,4 @@ const DraggableComponent = ({part}: {part: IPart }) => {
         );
 };
 
-export default DraggableComponent;
+export default  React.memo(DraggableComponent);

@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import "./Constructor.css"
 import {useAppDispatch, useAppSelector} from "../../store/storeHooks";
-import {addConstructorPart, removeConstructorPart} from "../../store/reducers/constructorReducer";
+import {addConstructorPart} from "../../store/reducers/constructorReducer";
 import {IPart} from "../../models/storeModels";
 import ConstructorPart from "./ConstructorPart";
 
 const Constructor = () => {
     const constructorParts = useAppSelector((state) => state.constructorParts.constructorParts);
-    const isCalculatorActive = useAppSelector((state) => state.calculator.isActive);
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const dispatch = useAppDispatch();
 

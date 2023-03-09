@@ -72,3 +72,32 @@
     border: 2px solid #5D5FEF;
     border-radius: 50%;
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 700px) {
+    .constructor__empty{
+        box-sizing: border-box;
+        width: 243px;
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+        gap: 4px;
+        border: 2px dashed #C4C4C4;
+        border-radius: 6px;
+    }
+    .constructor{
+        box-sizing: border-box;
+        position: static;
+        width: 243px;
+        height: 480px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
